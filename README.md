@@ -22,6 +22,6 @@ Start it:
 npm start
 ```
 
-# Config
+# Setting it Up
 
-## todo
+todo

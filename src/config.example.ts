@@ -1,4 +1,6 @@
 // Check README for setup instructions.
 export const config = {
-  clientID: "000000000000000000",
+  email: "me@example.com",
+  url: "http://example.com:32400",
+  username: "ALEXMEOW4560",
 };
