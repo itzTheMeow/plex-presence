@@ -61,7 +61,7 @@ axios
             return;
 
           rpc.setActivity({
-            details: `Playing ${playing.title} - ${playing.originalTitle}`,
+            details: `Playing ${playing.title || playing.parentTitle} - ${playing.originalTitle}`,
             state: `on ${playing.parentTitle} (${playing.parentYear})`,
             largeImageKey: playing.parentThumb
               ? `${config.url}${playing.parentThumb}?X-Plex-Token=${authToken}`
