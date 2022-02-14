@@ -60,9 +60,12 @@ axios
           )
             return;
 
+          let year = playing.parentYear ? ` (${playing.parentYear})` : "";
           rpc.setActivity({
-            details: `Playing ${playing.title || playing.parentTitle} - ${playing.originalTitle}`,
-            state: `on ${playing.parentTitle} (${playing.parentYear})`,
+            details: `Playing ${playing.title || playing.parentTitle} - ${
+              playing.originalTitle || playing.grandparentTitle
+            }`,
+            state: `on ${playing.parentTitle}${year}`,
             largeImageKey: playing.parentThumb
               ? `${config.url}${playing.parentThumb}?X-Plex-Token=${authToken}`
               : "logo",
